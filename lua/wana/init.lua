@@ -17,6 +17,15 @@ function M.load()
   for group, spec in pairs(groups) do
     vim.api.nvim_set_hl(0, group, spec)
   end
+
+  -- :terminal ANSI colors (0-15) from the palette.
+  local term = {
+    p.bg_dim, p.red, p.green, p.yellow, p.blue, p.magenta, p.cyan, p.fg,
+    p.muted, p.br_red, p.br_green, p.br_yellow, p.br_blue, p.br_magenta, p.br_cyan, p.fg_bright,
+  }
+  for i, color in ipairs(term) do
+    vim.g["terminal_color_" .. (i - 1)] = color
+  end
 end
 
 -- Allow require("wana").setup() as an alias for symmetry with other plugins.
