@@ -18,5 +18,11 @@ end }
 `set background=dark` / `set background=light` selects the variant, then
 `:colorscheme wana`.
 
+## lualine
+
+```lua
+require("lualine").setup({ options = { theme = "wana" } })
+```
+
 > `lua/wana/palette.lua` is generated — do not hand-edit. Edit highlights in
 > `lua/wana/highlights.lua`. Source of truth: `schemes/` in atalariq/wana.
