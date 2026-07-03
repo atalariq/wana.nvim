@@ -8,6 +8,8 @@ A warm, bookish Gruvbox-leaning Neovim colorscheme with dark + light variants.
 The palette is generated from the canonical [Wana](https://github.com/atalariq/wana)
 base24 schemes; highlights are hand-authored.
 
+![wana.nvim — dark, Python with treesitter](preview.png)
+
 ## Palette
 
 | variant   | bg                                                | red                                               | orange                                            | yellow                                            | green                                             | cyan                                              | blue                                              | magenta                                           | fg                                                |
